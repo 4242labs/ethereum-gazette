@@ -25,4 +25,4 @@ and setup. These documents describe the system as it ran.
 
 ## License
 
-[MIT](../LICENSE) © 42labs.
+Open source — [AGPL-3.0](../LICENSE). Commercial — contact ahoy@42labs.io. © 42labs.

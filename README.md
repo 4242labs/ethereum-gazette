@@ -99,4 +99,4 @@ Full technical docs live in [`docs/`](docs/):
 
 ## License
 
-[MIT](LICENSE) © 42labs. Provided as-is, without warranty.
+Open source — [AGPL-3.0](LICENSE). Commercial — contact ahoy@42labs.io. © 42labs.
