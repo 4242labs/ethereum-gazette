@@ -1,0 +1,43 @@
+ID,Source Name,Category,Priority,Update Interval (min),Status,Description,RSS URL
+1,Ethereum Foundation Blog,News,1,60,Enabled,Official Ethereum Foundation announcements,https://blog.ethereum.org/feed/
+2,Week in Ethereum News,News,1,60,Enabled,Weekly comprehensive ecosystem roundup,https://weekinethereumnews.com/feed/
+3,CoinDesk Ethereum,News,2,30,Enabled,CoinDesk Ethereum news coverage,https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml&tag=ethereum
+4,The Block,News,2,30,Enabled,Crypto and blockchain news,https://www.theblock.co/rss.xml
+5,Decrypt,News,2,60,Enabled,Web3 and crypto news,https://decrypt.co/feed
+6,Cointelegraph Ethereum,News,3,60,Enabled,Ethereum coverage from Cointelegraph,https://cointelegraph.com/rss/tag/ethereum
+7,Vitalik Buterin's Blog,People,1,240,Enabled,Vitalik Buterin's personal blog,https://vitalik.eth.limo/feed.xml
+8,ETH.Build Blog,Education,2,240,Disabled,Educational content about Ethereum,https://sandbox.eth.build/feed
+9,EthHub,Education,2,240,Enabled,Educational Ethereum content,https://ethhub.substack.com/feed
+10,Finematics,Education,2,240,Enabled,DeFi education and explainers,https://finematics.com/feed/
+11,Uniswap Blog,Projects,1,120,Enabled,Uniswap protocol updates,https://blog.uniswap.org/rss.xml
+12,Aave Blog,Projects,1,120,Enabled,Aave protocol announcements,https://medium.com/feed/aave
+13,Lido Blog,Projects,1,120,Enabled,Lido liquid staking updates,https://blog.lido.fi/rss/
+14,MakerDAO Blog,Projects,1,120,Enabled,MakerDAO and Dai stablecoin news,https://blog.makerdao.com/feed/
+15,Optimism Blog,Projects,1,120,Enabled,Optimism L2 updates,https://optimism.mirror.xyz/feed/atom
+16,Arbitrum Blog,Projects,1,120,Enabled,Arbitrum L2 announcements,https://offchain.medium.com/feed
+17,ETHGlobal Events,Events,1,240,Disabled,ETHGlobal hackathons and events,https://ethglobal.com/events/rss
+18,Bankless,Media,1,120,Enabled,Bankless podcast and newsletter,https://banklesshq.com/feed
+19,Unchained Podcast,Media,2,240,Enabled,Laura Shin's Unchained podcast,https://unchainedpodcast.com/feed/podcast/
+20,Zero Knowledge Podcast,Media,2,240,Enabled,Zero knowledge and cryptography podcast,https://www.zeroknowledge.fm/feed/podcast/
+21,Epicenter Podcast,Media,2,240,Enabled,Blockchain and Ethereum podcast,https://epicenter.tv/feed/podcast/
+22,Reddit r/ethereum,Communities,2,60,Enabled,Ethereum subreddit feed,https://www.reddit.com/r/ethereum/.rss
+23,EthResearch,Communities,1,120,Enabled,Ethereum research forum,https://ethresear.ch/latest.rss
+24,Ethereum Magicians,Communities,2,120,Enabled,EIP discussion forum,https://ethereum-magicians.org/latest.rss
+25,Gitcoin Blog,Grants,1,240,Enabled,Gitcoin grants and funding news,https://www.gitcoin.co/blog/rss.xml
+26,Ethereum Foundation Grants,Grants,1,240,Enabled,EF grant announcements,https://blog.ethereum.org/en/category/grants/feed/
+27,MakerDAO Governance,DAOs,2,180,Enabled,MakerDAO governance forum,https://forum.makerdao.com/latest.rss
+28,Uniswap Governance,DAOs,2,180,Enabled,Uniswap governance discussions,https://gov.uniswap.org/latest.rss
+29,ENS DAO,DAOs,2,180,Enabled,ENS governance forum,https://discuss.ens.domains/latest.rss
+30,ConsenSys,Orgs,2,180,Enabled,ConsenSys company blog,https://consensys.net/blog/feed/
+31,Crypto Jobs List,Jobs,1,240,Enabled,Ethereum job listings,https://cryptojobslist.com/ethereum?format=rss
+32,Web3 Career,Jobs,1,240,Enabled,Web3 job board,https://web3.career/feed
+33,Polygon Blog,Projects,2,180,Enabled,Polygon network updates,https://polygon.technology/blog/rss.xml
+34,Chainlink Blog,Projects,2,180,Enabled,Chainlink oracle network news,https://blog.chain.link/rss/
+35,The Defiant,News,2,60,Enabled,DeFi focused news,https://thedefiant.io/feed/
+36,Messari,News,3,120,Disabled,Crypto research and analysis,https://messari.io/rss
+37,EthStaker,Communities,1,180,Enabled,Ethereum staking community,https://ethstaker.cc/feed/
+38,StarkWare Blog,Projects,2,180,Enabled,StarkNet and ZK-rollup updates,https://medium.com/feed/starkware
+39,zkSync Blog,Projects,2,180,Enabled,zkSync L2 announcements,https://blog.matter-labs.io/feed
+40,Scroll Blog,Projects,2,180,Enabled,Scroll zkEVM updates,https://scroll.io/blog/rss.xml
+41,Alchemy Blog,Education,2,240,Enabled,Developer tutorials and guides,https://www.alchemy.com/blog/rss.xml
+42,Ethereum Cat Herders,Communities,2,240,Enabled,Protocol coordination updates,https://medium.com/feed/ethereum-cat-herders

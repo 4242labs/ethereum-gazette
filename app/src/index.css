@@ -1,0 +1,552 @@
+@import "tailwindcss";
+
+@theme {
+    --default-transition-duration: 200ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Orange accent palette (copper scale) */
+    --color-accent-50: #FEF3E2;
+    --color-accent-100: #FDDCB5;
+    --color-accent-200: #FBCA8E;
+    --color-accent-300: #F4A261;
+    --color-accent-400: #E8853A;
+    --color-accent-500: #E2711D;
+    --color-accent-600: #CC5D0A;
+    --color-accent-700: #B45309;
+    --color-accent-800: #92400E;
+    --color-accent-900: #78350F;
+
+    /* Ethereum.org teal accent */
+    --color-teal-50: #f0fdfa;
+    --color-teal-100: #ccfbf1;
+    --color-teal-200: #99f6e4;
+    --color-teal-300: #5eead4;
+    --color-teal-400: #2dd4bf;
+    --color-teal-500: #14b8a6;
+    --color-teal-600: #0d9488;
+    --color-eth-teal: #1ba5d6;
+}
+
+/* Enable dark mode with class-based strategy */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
+
+.dark {
+    color-scheme: dark;
+}
+
+/* Ensure transitions work smoothly */
+* {
+    transition-property:
+        color, background-color, border-color, box-shadow, transform;
+    transition-duration: var(--default-transition-duration);
+    transition-timing-function: var(--default-transition-timing-function);
+}
+
+/* Font families */
+body {
+    font-family: 'Geist Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    background-color: #ffffff !important;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6,
+.text-title,
+.font-heading {
+    font-family: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+.dark body {
+    background-color: #111827 !important;
+    background-image: radial-gradient(
+        circle at 1px 1px,
+        rgba(226, 113, 29, 0.08) 1px,
+        transparent 0
+    ) !important;
+    background-size: 24px 24px !important;
+}
+
+/* Card styles — neutral shadows and borders */
+.card-base {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.06),
+        0 1px 2px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.card-base:hover {
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.10),
+        0 2px 4px rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.dark .card-base {
+    background: #1f2937;
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.3),
+        0 1px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark .card-base:hover {
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.4),
+        0 2px 4px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Featured card — neutral gradient */
+.card-featured {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 50%, #f5f5f5 100%);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-featured:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
+    border-color: rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+}
+
+.dark .card-featured {
+    background: linear-gradient(
+        135deg,
+        rgba(31, 41, 55, 1) 0%,
+        rgba(55, 65, 81, 0.5) 50%,
+        rgba(31, 41, 55, 1) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark .card-featured:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Card with subtle gradient background */
+.card-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 50%, #f5f5f5 100%);
+}
+
+.dark .card-gradient {
+    background: linear-gradient(135deg, #1f2937 0%, #1e293b 50%, #1f2937 100%);
+}
+
+/* Micro-interactions */
+.hover-lift {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+}
+
+.hover-scale {
+    transition: transform 0.15s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.02);
+}
+
+.hover-glow:hover {
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.08),
+        0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dark .hover-glow:hover {
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.3),
+        0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon pulse on hover */
+.icon-hover {
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+.group:hover .icon-hover {
+    transform: scale(1.1);
+    color: var(--color-accent-500);
+}
+
+.dark .group:hover .icon-hover {
+    color: var(--color-accent-400);
+}
+
+/* Explicit dark mode overrides */
+.dark,
+.dark body {
+    background-color: #111827 !important;
+}
+
+.dark .bg-gray-50 {
+    background-color: #111827 !important;
+}
+
+.dark aside > div,
+.dark main {
+    background-color: #1f2937 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark .bg-white {
+    background-color: #1f2937 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark .bg-gradient-to-br {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(31, 41, 55, 1),
+        rgba(55, 65, 81, 0.5)
+    ) !important;
+}
+
+.dark .text-gray-900 {
+    color: #f3f4f6 !important;
+}
+
+.dark .text-gray-700 {
+    color: #d1d5db !important;
+}
+
+.dark .text-gray-600,
+.dark .text-gray-500 {
+    color: #9ca3af !important;
+}
+
+.dark .border-gray-200,
+.dark .border-accent-200 {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark input {
+    background-color: #374151 !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    color: #f3f4f6 !important;
+}
+
+.dark input::placeholder {
+    color: #9ca3af !important;
+}
+
+/* Accent color utilities */
+.text-accent {
+    color: var(--color-accent-600);
+}
+
+.dark .text-accent {
+    color: var(--color-accent-400);
+}
+
+.bg-accent {
+    background-color: var(--color-accent-500);
+}
+
+.border-accent {
+    border-color: var(--color-accent-500);
+}
+
+/* Ethereum.org teal accent utilities */
+.text-eth-teal {
+    color: var(--color-eth-teal);
+}
+
+.bg-eth-teal {
+    background-color: var(--color-eth-teal);
+}
+
+.border-eth-teal {
+    border-color: var(--color-eth-teal);
+}
+
+/* Pill badge styles */
+.badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.625rem;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    transition: all 0.15s ease;
+}
+
+.badge-pill-accent {
+    background-color: rgba(226, 113, 29, 0.08);
+    color: var(--color-accent-600);
+}
+
+.dark .badge-pill-accent {
+    background-color: rgba(226, 113, 29, 0.2);
+    color: var(--color-accent-400);
+}
+
+.badge-pill-teal {
+    background-color: rgba(27, 165, 214, 0.1);
+    color: #0d9488;
+}
+
+.dark .badge-pill-teal {
+    background-color: rgba(27, 165, 214, 0.2);
+    color: #2dd4bf;
+}
+
+/* Dynamic pill colors per category */
+.badge-people {
+    background-color: rgba(6, 182, 212, 0.1);
+    color: #0891b2;
+}
+.badge-orgs {
+    background-color: rgba(99, 102, 241, 0.1);
+    color: #4f46e5;
+}
+.badge-projects {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+}
+.badge-education {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #059669;
+}
+.badge-news {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+}
+.badge-events {
+    background-color: rgba(236, 72, 153, 0.1);
+    color: #db2777;
+}
+.badge-jobs {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #2563eb;
+}
+.badge-grants {
+    background-color: rgba(168, 85, 247, 0.1);
+    color: #9333ea;
+}
+.badge-communities {
+    background-color: rgba(20, 184, 166, 0.1);
+    color: #0d9488;
+}
+.badge-podcasts {
+    background-color: rgba(244, 63, 94, 0.1);
+    color: #e11d48;
+}
+.badge-youtube {
+    background-color: rgba(14, 165, 233, 0.1);
+    color: #0284c7;
+}
+.badge-all {
+    background-color: rgba(226, 113, 29, 0.08);
+    color: var(--color-accent-600);
+}
+
+.dark .badge-people {
+    background-color: rgba(6, 182, 212, 0.2);
+    color: #22d3ee;
+}
+.dark .badge-orgs {
+    background-color: rgba(99, 102, 241, 0.2);
+    color: #818cf8;
+}
+.dark .badge-projects {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+}
+.dark .badge-education {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+}
+.dark .badge-news {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+}
+.dark .badge-events {
+    background-color: rgba(236, 72, 153, 0.2);
+    color: #f472b6;
+}
+.dark .badge-jobs {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+}
+.dark .badge-grants {
+    background-color: rgba(168, 85, 247, 0.2);
+    color: #c084fc;
+}
+.dark .badge-communities {
+    background-color: rgba(20, 184, 166, 0.2);
+    color: #2dd4bf;
+}
+.dark .badge-podcasts {
+    background-color: rgba(244, 63, 94, 0.2);
+    color: #fb7185;
+}
+.dark .badge-youtube {
+    background-color: rgba(14, 165, 233, 0.2);
+    color: #38bdf8;
+}
+.dark .badge-all {
+    background-color: rgba(226, 113, 29, 0.2);
+    color: var(--color-accent-400);
+}
+
+/* Category icon colors */
+.icon-people {
+    color: #06b6d4;
+} /* cyan */
+.icon-orgs {
+    color: #6366f1;
+} /* indigo */
+.icon-projects {
+    color: #f59e0b;
+} /* amber */
+.icon-education {
+    color: #10b981;
+} /* emerald */
+.icon-news {
+    color: #ef4444;
+} /* red */
+.icon-events {
+    color: #ec4899;
+} /* pink */
+.icon-jobs {
+    color: #3b82f6;
+} /* blue */
+.icon-grants {
+    color: #a855f7;
+} /* purple */
+.icon-communities {
+    color: #14b8a6;
+} /* teal */
+.icon-podcasts {
+    color: #f43f5e;
+} /* rose */
+.icon-youtube {
+    color: #0ea5e9;
+} /* sky */
+.icon-all {
+    color: var(--color-accent-500);
+} /* accent */
+
+/* Typography enhancements */
+.text-title {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.text-body {
+    font-weight: 400;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.dark .text-body {
+    color: #9ca3af;
+}
+
+.text-meta {
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #4b5563;
+}
+
+.dark .text-meta {
+    color: #9ca3af;
+}
+
+/* Soft shadow utilities — neutral */
+.shadow-soft {
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.06),
+        0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-soft-md {
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08),
+        0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-soft-lg {
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.10),
+        0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dark .shadow-soft {
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.3),
+        0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dark .shadow-soft-md {
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.4),
+        0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark .shadow-soft-lg {
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.5),
+        0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Skeleton shimmer animation — neutral */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.animate-shimmer {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.03) 0%,
+        rgba(0, 0, 0, 0.06) 50%,
+        rgba(0, 0, 0, 0.03) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+}
+
+.dark .animate-shimmer {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.10) 50%,
+        rgba(255, 255, 255, 0.05) 100%
+    );
+    background-size: 200% 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

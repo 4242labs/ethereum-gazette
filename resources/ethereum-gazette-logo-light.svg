@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2179 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-448.819,-1033.46)">
+        <g transform="matrix(0.895604,0,0,1,-30.5659,263.343)">
+            <g transform="matrix(1.11656,0,0,1,311.072,279.965)">
+                <text x="477.81px" y="721.504px" style="font-family:'SpaceGrotesk-Regular', 'Space Grotesk';font-size:229.167px;fill:rgb(28,25,23);">Ether<tspan x="1070.66px " y="721.504px ">e</tspan>um</text>
+                <g transform="matrix(229.167,0,0,229.167,2077.39,721.504)">
+                    <path d="M0.263,-0C0.235,-0 0.214,-0.008 0.199,-0.023C0.184,-0.038 0.176,-0.059 0.176,-0.086L0.176,-0.42L0.029,-0.42L0.029,-0.489L0.176,-0.489L0.176,-0.663L0.255,-0.663L0.255,-0.489L0.383,-0.489L0.383,-0.42L0.255,-0.42L0.255,-0.098C0.255,-0.078 0.265,-0.068 0.284,-0.068L0.393,-0.068L0.393,-0L0.263,-0ZM0.585,-0C0.557,-0 0.535,-0.008 0.52,-0.023C0.505,-0.038 0.497,-0.059 0.497,-0.086L0.497,-0.42L0.383,-0.42L0.383,-0.489L0.497,-0.489L0.497,-0.663L0.576,-0.663L0.576,-0.489L0.737,-0.489L0.737,-0.42L0.576,-0.42L0.576,-0.098C0.576,-0.078 0.586,-0.068 0.606,-0.068L0.715,-0.068L0.715,-0L0.585,-0Z" style="fill:rgb(226,113,29);fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(229.167,0,0,229.167,2077.39,721.504)">
+                </g>
+                <g transform="matrix(229.167,0,0,229.167,2167,721.504)">
+                </g>
+                <g transform="matrix(229.167,0,0,229.167,2392.27,721.504)">
+                </g>
+                <text x="1543.66px" y="721.504px" style="font-family:'SpaceGrotesk-Regular', 'Space Grotesk';font-size:229.167px;fill:rgb(226,113,29);">Gaz<tspan x="1941.73px 2256.6px " y="721.504px 721.504px ">ee</tspan></text>
+            </g>
+            <g transform="matrix(0.0412118,0,0,0.0369094,700.111,917.76)">
+                <g transform="matrix(1,0,0,1,-4000,-4000)">
+                    <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+                        <path d="M959.8,730.9L420,976.3L959.8,1295.4L959.8,730.9Z" style="fill:rgb(104,47,8);fill-rule:nonzero;"/>
+                        <path d="M420.2,976.3L960,730.9L960,80.6L420.2,976.3Z" style="fill:rgb(238,121,43);fill-rule:nonzero;"/>
+                        <path d="M960,80.6L960,730.9L1499.8,976.3L960,80.6Z" style="fill:rgb(94,42,8);fill-rule:nonzero;"/>
+                        <path d="M420,1078.7L959.8,1839.4L959.8,1397.6L420,1078.7Z" style="fill:rgb(238,121,43);fill-rule:nonzero;"/>
+                        <path d="M959.8,1397.6L959.8,1839.4L1500,1078.7L959.8,1397.6Z" style="fill:rgb(94,42,8);fill-rule:nonzero;"/>
+                        <path d="M959.8,730.9L959.8,1295.4L1499.7,976.3L959.8,730.9Z" style="fill:rgb(38,17,3);fill-rule:nonzero;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

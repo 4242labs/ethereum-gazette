@@ -1,0 +1,93 @@
+# Ethereum Gazette - Featured Content Management
+#
+# This file controls which posts are featured in the right sidebar.
+# Edit this file to change featured content, then run the sync command.
+#
+# Format:
+# - id: unique identifier
+#   level: 1 (primary) or 2 (secondary)
+#   title: display title (max 100 chars for level 1, 50 for level 2)
+#   description: description text (max 200 chars for level 1, 100 for level 2)
+#   url: external link
+#   badge: optional badge text
+#   category: content category
+#   imageUrl: optional image URL
+#   active: true/false
+#   priority: display order (lower = higher priority)
+#
+# Last updated: 2025-12-28
+# Total featured items: 4
+
+featured_items:
+  - id: "featured-001"
+    level: 1
+    title: "Ethereum's Hegota Upgrade Coming 2026"
+    description: "Major protocol upgrade will introduce parallel execution and Verkle Trees, targeting 10,000+ TPS performance."
+    url: "https://www.coindesk.com/tech/2025/12/28/ethereum-s-hegota-upgrade-slated-for-late-2026-as-devs-accelerate-roadmap"
+    badge: "Protocol"
+    category: "news"
+    imageUrl: null
+    active: true
+    priority: 1
+
+  - id: "featured-002"
+    level: 2
+    title: "Account Abstraction Deep Dive"
+    description: "Understanding ERC-4337 and smart account fundamentals for developers."
+    url: "https://www.reddit.com/r/ethereum/comments/1pxx78m/account_abstraction_erc4337_part_1_the_basics/"
+    badge: "Education"
+    category: "education"
+    imageUrl: null
+    active: true
+    priority: 2
+
+  - id: "featured-003"
+    level: 2
+    title: "Lido stETH SEC Analysis"
+    description: "Impact of new regulatory guidance on liquid staking protocols."
+    url: "https://blog.lido.fi/analysis-of-steth-in-light-of-sec-division-of-corporate-finances-guidance-on-liquid-staking-activities/"
+    badge: "DeFi"
+    category: "projects"
+    imageUrl: "https://blog.lido.fi/content/images/2025/11/Staking-Ethereum-With-Lid--1-.png"
+    active: true
+    priority: 3
+
+  - id: "featured-004"
+    level: 2
+    title: "Uniswap UNIfication Passes"
+    description: "Major governance proposal enables fee switch and token burns."
+    url: "https://thedefiant.io/news/defi/uniswap-passes-unification-fee-switch-proposal"
+    badge: "Governance"
+    category: "daos"
+    imageUrl: "https://cdn.thedefiant.io/52a6afc52397d2cf503709281795c27f9a58dbf744560b2aa01838a7732b-c2cad5d7-d650-4d37-a4de-2d22bcf05a88.png"
+    active: true
+    priority: 4
+
+# Template for new featured items:
+#
+# - id: "featured-XXX"
+#   level: 1 or 2
+#   title: "Title Here" # Max 100 chars (level 1) or 50 chars (level 2)
+#   description: "Description here" # Max 200 chars (level 1) or 100 chars (level 2)
+#   url: "https://example.com"
+#   badge: "Optional Badge"
+#   category: "news|communities|projects|education|people|events|grants|daos|orgs|jobs|media"
+#   imageUrl: "https://example.com/image.jpg" # Optional
+#   active: true
+#   priority: 5 # Lower number = higher priority
+
+# Guidelines for featured content selection:
+#
+# 1. Relevance: Must be directly related to Ethereum ecosystem
+# 2. Quality: High-quality sources with credible information
+# 3. Freshness: Prefer content from last 7 days for news
+# 4. Diversity: Balance across categories and sources
+# 5. Impact: Select content that affects the broader community
+#
+# Character limits are strictly enforced:
+# - Level 1 title: 100 characters maximum
+# - Level 1 description: 200 characters maximum
+# - Level 2 title: 50 characters maximum
+# - Level 2 description: 100 characters maximum
+#
+# Always have exactly 1 level 1 item and 3 level 2 items active.

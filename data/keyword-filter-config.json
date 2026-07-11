@@ -1,0 +1,347 @@
+{
+  "version": "1.1.0",
+  "description": "Keyword-based content filtering configuration for Ethereum-focused content curation",
+  "lastUpdated": "2026-02-06T00:00:00.000Z",
+  "config": {
+    "thresholds": {
+      "autoApprove": 1.2,
+      "autoReject": -0.5,
+      "reviewQueue": {
+        "min": -0.5,
+        "max": 1.2
+      }
+    },
+    "contextWeights": {
+      "title": 2.0,
+      "snippet": 1.0,
+      "url": 1.5
+    },
+    "proximityBonus": {
+      "enabled": true,
+      "multiplier": 1.2,
+      "maxDistance": 5
+    }
+  },
+  "keywords": {
+    "coreEthereum": {
+      "weight": 1.0,
+      "description": "Core Ethereum protocol terms",
+      "terms": [
+        "ethereum",
+        "eth",
+        "mainnet",
+        "testnet",
+        "goerli",
+        "sepolia",
+        "holesky",
+        "eip-",
+        "erc-",
+        "evm",
+        "ethereum virtual machine",
+        "gas",
+        "gwei",
+        "block",
+        "transaction",
+        "smart contract",
+        "proof of stake",
+        "pos",
+        "validator",
+        "staking",
+        "beacon chain",
+        "consensus layer",
+        "execution layer",
+        "merge",
+        "dencun",
+        "cancun",
+        "sharding",
+        "proto-danksharding",
+        "blob",
+        "4844"
+      ]
+    },
+    "layer2": {
+      "weight": 0.9,
+      "description": "Ethereum Layer 2 solutions",
+      "terms": [
+        "layer 2",
+        "l2",
+        "rollup",
+        "optimistic rollup",
+        "zk-rollup",
+        "zk-stark",
+        "zk-snark",
+        "arbitrum",
+        "optimism",
+        "polygon",
+        "base",
+        "scroll",
+        "zksync",
+        "starknet",
+        "linea",
+        "mantle"
+      ]
+    },
+    "defi": {
+      "weight": 0.8,
+      "description": "Decentralized Finance on Ethereum",
+      "terms": [
+        "defi",
+        "decentralized finance",
+        "liquidity",
+        "yield",
+        "amm",
+        "automated market maker",
+        "dex",
+        "decentralized exchange",
+        "lending",
+        "borrowing",
+        "collateral",
+        "liquidation",
+        "tvl",
+        "total value locked"
+      ]
+    },
+    "majorProtocols": {
+      "weight": 0.7,
+      "description": "Major Ethereum protocols and applications",
+      "terms": [
+        "uniswap",
+        "aave",
+        "maker",
+        "makerdao",
+        "dai",
+        "compound",
+        "lido",
+        "curve",
+        "balancer",
+        "synthetix",
+        "chainlink",
+        "ens",
+        "ethereum name service",
+        "opensea",
+        "metamask"
+      ]
+    },
+    "development": {
+      "weight": 0.6,
+      "description": "Ethereum development tools and concepts",
+      "terms": [
+        "solidity",
+        "vyper",
+        "web3",
+        "dapp",
+        "decentralized application",
+        "infura",
+        "alchemy",
+        "etherscan",
+        "hardhat",
+        "foundry",
+        "remix",
+        "openzeppelin",
+        "wagmi",
+        "viem",
+        "ethers.js",
+        "web3.js"
+      ]
+    },
+    "governance": {
+      "weight": 0.6,
+      "description": "Ethereum governance and DAOs",
+      "terms": [
+        "dao",
+        "governance",
+        "proposal",
+        "voting",
+        "multisig",
+        "safe",
+        "gnosis",
+        "snapshot",
+        "gitcoin",
+        "grants",
+        "quadratic funding",
+        "ethereum foundation",
+        "ef"
+      ]
+    },
+    "nft": {
+      "weight": 0.5,
+      "description": "NFTs and digital assets on Ethereum",
+      "terms": [
+        "nft",
+        "non-fungible token",
+        "erc-721",
+        "erc-1155",
+        "opensea",
+        "collectibles",
+        "digital art",
+        "pfp",
+        "avatar"
+      ]
+    },
+    "scaling": {
+      "weight": 0.8,
+      "description": "Ethereum scaling solutions and research",
+      "terms": [
+        "scaling",
+        "scalability",
+        "throughput",
+        "tps",
+        "transactions per second",
+        "state channels",
+        "plasma",
+        "sidechains",
+        "interoperability",
+        "bridge",
+        "cross-chain"
+      ]
+    },
+    "research": {
+      "weight": 0.7,
+      "description": "Ethereum research and improvement",
+      "terms": [
+        "research",
+        "eip",
+        "ethereum improvement proposal",
+        "erc",
+        "ethereum request for comment",
+        "ethresearch",
+        "vitalik",
+        "buterin",
+        "cryptography",
+        "zero knowledge",
+        "privacy",
+        "mev",
+        "maximal extractable value"
+      ]
+    },
+    "competitors": {
+      "weight": -1.2,
+      "description": "Other blockchain platforms (negative weight)",
+      "terms": [
+        "bitcoin",
+        "btc",
+        "solana",
+        "sol",
+        "cardano",
+        "ada",
+        "avalanche",
+        "avax",
+        "binance smart chain",
+        "bsc",
+        "tron",
+        "trx",
+        "polkadot",
+        "dot",
+        "cosmos",
+        "atom",
+        "algorand",
+        "algo",
+        "near",
+        "flow",
+        "hedera",
+        "fantom",
+        "harmony"
+      ]
+    },
+    "irrelevantTools": {
+      "weight": -0.8,
+      "description": "Tools that are blockchain-agnostic or non-Ethereum specific",
+      "terms": [
+        "truffle",
+        "ganache",
+        "docker",
+        "kubernetes",
+        "aws",
+        "azure",
+        "trading bot",
+        "binance",
+        "coinbase",
+        "kraken",
+        "gemini"
+      ]
+    },
+    "spam": {
+      "weight": -1.0,
+      "description": "Common spam and low-quality content indicators",
+      "terms": [
+        "airdrop",
+        "free tokens",
+        "pump",
+        "hodl",
+        "fud",
+        "shill",
+        "rug pull",
+        "scam",
+        "click here",
+        "limited time",
+        "exclusive offer",
+        "guaranteed profit",
+        "trading strategies",
+        "portfolio"
+      ]
+    },
+    "priceSpeculation": {
+      "weight": -0.8,
+      "description": "Terms indicating price speculation, not protocol/technology discussion",
+      "terms": [
+        "price prediction",
+        "technical analysis",
+        "chart patterns",
+        "bull market",
+        "10x",
+        "100x",
+        "moon",
+        "lambo"
+      ]
+    }
+  },
+  "contextualRules": {
+    "comparisonBidirectional": {
+      "description": "Ethereum compared to/against competitors or vice versa — indicates substantive analysis, push toward review",
+      "pattern": "(?:(?:ethereum|eth)\\s+(?:vs|versus|compared to|against)\\s+(?:bitcoin|solana|cardano|avalanche))|(?:(?:bitcoin|solana|cardano|avalanche)\\s+(?:vs|versus|compared to|against)\\s+(?:ethereum|eth))|(?:which\\s+(?:is\\s+)?(?:better|best).*(?:ethereum|bitcoin|solana|cardano))",
+      "weightModifier": 1.0
+    },
+    "competitorDominance": {
+      "description": "Competitor surpasses/beats/outperforms Ethereum — strong negative signal",
+      "pattern": "(?:solana|bitcoin|cardano|avalanche).*(?:surpass|surpasses|beat|beats|exceed|exceeds|outperform|outperforms).*ethereum",
+      "weightModifier": -5.0
+    },
+    "migrateFromEthereum": {
+      "description": "Migration/exodus away from Ethereum to competitors — reject signal",
+      "pattern": "(?:(?:migrat|mov|switch|leav|abandon).*(?:from|away from).*ethereum.*(?:to\\s|seeking|for))|(?:ethereum.*(?:developers|users).*(?:migrat|mov|switch|leav|abandon).*(?:seeking|for|to))",
+      "weightModifier": -5.0
+    },
+    "migrateToEthereum": {
+      "description": "Migration TO Ethereum — strong positive signal",
+      "pattern": "(?:migrat|mov|switch).*(?:to|into)\\s+ethereum",
+      "weightModifier": 0.8
+    },
+    "integration": {
+      "description": "Integration with Ethereum is relevant even if mentioning other chains",
+      "pattern": "integrat.*ethereum|ethereum\\s+integrat",
+      "weightModifier": 0.6
+    },
+    "ethereumNegativeContext": {
+      "description": "Ethereum mentioned primarily in negative context",
+      "pattern": "ethereum.*(?:slow|expensive|problem|issue|fail|struggling|losing)",
+      "weightModifier": -3.0
+    }
+  },
+  "exclusionPatterns": {
+    "description": "Patterns that should be automatically rejected regardless of keyword score",
+    "patterns": [
+      "bitcoin price prediction",
+      "crypto trading signals",
+      "investment advice",
+      "not financial advice",
+      "pump and dump"
+    ]
+  },
+  "notes": {
+    "usage": "This configuration supports Method 3 Phase 2 keyword heuristics filtering for Tier 2 RSS sources",
+    "scoring": "Final score = sum(keyword_weight * context_weight * frequency) + proximity_bonus + contextual_rule_modifiers",
+    "thresholds": "autoApprove >= 1.2, autoReject <= -0.5, everything else goes to review queue",
+    "maintenance": "Keywords should be reviewed monthly and updated based on ecosystem evolution",
+    "testing": "Use /api/test/keyword-filter endpoint to validate changes before deployment"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ethereum-gazette-api",
+  "version": "1.0.0",
+  "description": "API endpoints for Ethereum Gazette",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.95.3",
+    "@vercel/node": "^5.6.18",
+    "alchemy-sdk": "^3.0.0",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.11.0"
+  }
+}
