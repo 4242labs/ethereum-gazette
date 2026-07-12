@@ -100,3 +100,6 @@ Full technical docs live in [`docs/`](docs/):
 ## License
 
 Open source — [AGPL-3.0](LICENSE). Commercial — contact ahoy@42labs.io. © 42labs.
+
+---
+If it earned its keep, [coffee is appreciated](https://buymeacoffee.com/42piratas). ☕
