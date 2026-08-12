@@ -1,5 +1,7 @@
 # Ethereum Gazette
 
+[![No Maintenance Intended](https://unmaintained.tech/badge.svg)](https://unmaintained.tech/)
+
 > **The Front Page of Ethereum** — a minimalist, curated aggregator for the Ethereum ecosystem.
 
 > [!NOTE]
